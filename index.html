@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Land on Moon</title>
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/icons8-moon-48.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">StellarTerrain </a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <img src="images/stars.png" id="stars">
+        <img src="images/moon.png" id="moon">
+        <img src="images/mountains_behind.png" id="mountains_behind">
+
+        <h2 id="text">Buy Land on Moon</h2>
+        <a href="#wrapper" id="btn">Explore</a>
+        <img src="images/mountains_front.png" id="mountains_front">
+    </section>
+
+
+    
+    <div class="sec" id="sec">
+        <h2>Discover the Safe and Secure Way to Own a Piece of the Moon with Stellarterrain</h2>
+        <p>
+            Stellarterrain is a company that specializes in the sale of virtual plots of land on the moon. Their website
+            is a safe and secure platform for individuals to purchase their own piece of the lunar surface.
+            <br><br>
+            The process of buying land on the moon through Stellarterrain is simple and straightforward. First,
+            interested buyers can browse the available plots on the website and select the one that they are interested
+            in. Next, they can complete the purchase using a variety of secure payment methods.
+            <br><br>
+            Once the transaction is complete, the buyer will receive a digital certificate of ownership for their plot
+            of lunar land. This certificate can be used to prove ownership and can also be transferred to other
+            individuals.
+            <br><br>
+            In addition to being a unique and interesting purchase, owning land on the moon can also serve as an
+            investment. As space exploration and development continues to advance, the value of lunar land may increase
+            in the future.
+            <br><br>
+            Overall, Stellarterrain offers a safe and secure way for individuals to own their own piece of the moon.
+            Their website is user-friendly and easy to navigate, making the process of buying lunar land accessible to
+            anyone.
+            <br><br>
+        </p>
+    </div>
+
+    
+
+   <div id="wrapper">
+        <div class="container">
+            <h1 class="glow">Some Sites on Moon </h1>
+            <div class="gallery">
+
+                <figure class="card">
+                    <img src="images/image1.jpg" alt="image 1">
+                    <figcaption>Casa de la Musica</figcaption>
+                </figure>
+
+                <figure class="card">
+                    <img src="images/image2.jpeg" alt="image 1">
+                    <figcaption>Casa Batllo</figcaption>
+                </figure>
+
+                <figure class="card">
+                    <img src="images/image3.jpeg" alt="image 1">
+                    <figcaption>The Lovell Telescope</figcaption>
+                </figure>
+
+                <figure class="card">
+                    <img src="images/image4.jpeg" alt="image 1">
+                    <figcaption>Tugendhat House</figcaption>
+                </figure>
+
+                <figure class="card">
+                    <img src="images/image5.jpeg" alt="image 1">
+                    <figcaption>Villa Savoye</figcaption>
+                </figure>
+
+                <figure class="card">
+                    <img src="images/image6.jpeg" alt="image 1">
+                    <figcaption>Het Schip</figcaption>
+                </figure>
+
+                <figure class="card">
+                    <img src="images/image7.jpeg" alt="image 1">
+                    <figcaption>The High Court of Justice</figcaption>
+                </figure>
+
+                <figure class="card">
+                    <img src="images/image8.jpeg" alt="image 1">
+                    <figcaption>Maison de Verre</figcaption>
+                </figure>
+
+                <figure class="card">
+                    <img src="images/image9.jpeg" alt="image 1">
+                    <figcaption>The Chapel of Notre-Dame-du-Haut</figcaption>
+                </figure>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p>StellarTerrain &copy; 2023</p>
+
+        <script>
+            let starts = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let mountains_front = document.getElementById('mountains_front');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let header = document.querySelector('header');
+
+            // set factors less than 1 to create parallax effect without infinite scolling
+            window.addEventListener('scroll', function () {
+                let value = window.scrollY;
+
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 0.85 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 0.95 + 'px';
+                btn.style.marginTop = value * 0.95 + 'px';
+                header.style.top = value * 0.65 + 'px';
+            })
+
+        </script>
+</body>
+
+</html>
